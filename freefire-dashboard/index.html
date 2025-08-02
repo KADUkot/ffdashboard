@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel Free Fire</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Painel Free Fire</h1>
+
+  <form id="playerForm">
+    <input type="text" name="name" placeholder="Nome" required>
+    <input type="text" name="photo" placeholder="URL da Foto" required>
+    <input type="number" name="kills" placeholder="Kills" required>
+    <input type="number" name="damage" placeholder="Damage" required>
+    <button type="submit">Salvar</button>
+  </form>
+
+  <div id="players"></div>
+  <canvas id="killsChart" width="400" height="200"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
